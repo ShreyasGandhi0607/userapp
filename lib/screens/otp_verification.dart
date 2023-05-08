@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:pinput/pinput.dart';
 import 'package:provider/provider.dart';
+import 'package:userapp/screens/start.dart';
 import 'package:userapp/screens/user_info_screen.dart';
 import 'dart:async';
 
@@ -269,7 +270,7 @@ class _VerificatoinState extends State<Verificatoin> {
                         (value) => Navigator.pushAndRemoveUntil(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomePage(),
+                          builder: (context) => StartPage(),
                         ),
                             (route) => false),
                   ),

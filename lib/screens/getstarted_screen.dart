@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:userapp/screens/register_screen.dart';
+import 'package:userapp/screens/start.dart';
 
 import '../core/theme/app_color.dart';
 import '../provider/auth_provider.dart';
@@ -99,7 +100,7 @@ class _GetStartedscreenState extends State<GetStartedscreen> {
                               ? Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomePage()))
+                                  builder: (context) => StartPage()))
                               : Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -112,7 +113,7 @@ class _GetStartedscreenState extends State<GetStartedscreen> {
                             borderRadius: BorderRadius.circular(16),
                           ),
                         ),
-                        child: const Text("Get Started"),
+                        child: const Text("Login/Sign Up"),
                       ),
                     );
                   }

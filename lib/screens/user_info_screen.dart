@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:userapp/screens/start.dart';
 
 import '../model/user_model.dart';
 import '../provider/auth_provider.dart';
@@ -194,7 +195,7 @@ class _UserInfromationScreenState extends State<UserInfromationScreen> {
                   (value) => Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => HomePage(),
+                  builder: (context) => StartPage(),
                 ),
                     (route) => true,
               ),
